@@ -31,6 +31,7 @@ body {
   --dark-white:#ccc;
   --light-black:#ddd;
   --sec-dark-bg:#f4f4f4;
+  --sec-light-bg:#f9f9f9;
   --btn-gradient: linear-gradient(to right, #ff6a00, #a600ff);
 }
 
@@ -469,10 +470,16 @@ main {
 }
 
 /* Our Clients section End*/
+#ourProsess{
+  background-color: #000;
+}
+#ourProsess .heading_2{
+  color: #6903dc;
+}
+/* Our Prosess End */
 
 
 /* Testimonials start */
-
 #testimonials {
   background-color: #f4f4f4;
 }
@@ -485,6 +492,7 @@ main {
 
 .testimonials_con > .normalpara {
   text-align: center;
+
   margin-top: 15px;
 }
 
@@ -751,7 +759,7 @@ main {
 
   border-bottom: 1px solid var(--white);
 
-  border-top: 4px solid #ff7a28;
+  border-top: 4px solid var(--blue);
 
   padding-bottom: 12px;
 }
@@ -763,7 +771,7 @@ main {
 
   padding: 30px;
 
-  border: 1px solid #ccc;
+  border: 1px solid var(--dark-white);
 
   border-top: none;
 
@@ -813,7 +821,10 @@ main {
 
   padding: 50px;
 }
-
+.strategy_right .heading_2,
+.strategy_right .normalpara{
+  color: var(--white);
+}
 #strategyCall .strategy_con .strategy_left {
   width: 50%;
 
@@ -830,11 +841,11 @@ main {
 }
 
 #strategyCall .strategy_con .strategy_right .normalBtn {
-  background-color: #ff7a28;
+  background: var(--btn-gradient);
 }
 
 #strategyCall .strategy_con .strategy_right .normalBtn {
-  color: #ffffff;
+  color: var(--white);
 }
 
 /* Strategy Call Section End */
@@ -868,13 +879,13 @@ main {
 }
 
 .faq-heading .heading_2 {
-  color: #000;
+  color: var(--black);
 }
 
 .faq-heading .faq-heading_firstpera {
   text-align: center;
 
-  color: #000000;
+  color: var(--black);
 
   margin-top: 15px;
 }
@@ -882,21 +893,21 @@ main {
 .faq-heading .faq-heading_secpera {
   text-align: center;
 
-  color: #000000;
+  color: var(--black);
 
   margin-top: 10px;
 }
 
-.faq-heading .faq-heading_secpera a {
+/* .faq-heading .faq-heading_secpera a {
   text-decoration: none;
 
   color: #ff7a28;
-}
+} */
 
 .faq-item {
-  background: #fff;
+  background: var(--white);
 
-  border: 1px solid #ddd;
+  border: 1px solid var(--light-black);
 
   border-radius: 4px;
 
@@ -910,11 +921,11 @@ main {
 
   padding: 18px 20px;
 
-  background: #fff;
+  background: var(--white);
 
   border: none;
 
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--light-black);
 
   font-size: 16px;
 
@@ -926,7 +937,7 @@ main {
 
   font-weight: 600;
 
-  color: #000;
+  color: var(--black);
 }
 
 .faq-question::after {
@@ -940,7 +951,7 @@ main {
 
   transform: translateY(-50%) rotate(45deg);
 
-  border: solid #b200b2;
+  border: solid var(--blue);
 
   border-width: 0 2px 2px 0;
 
@@ -950,7 +961,7 @@ main {
 }
 
 .faq-item.active .faq-question {
-  color: #b200b2;
+  color: var(--blue);
 }
 
 .faq-item.active .faq-question::after {
@@ -964,7 +975,7 @@ main {
 
   padding: 0 20px;
 
-  background: #fff;
+  background:var(--white);
 
   transition: all 0.3s ease;
 
@@ -996,7 +1007,7 @@ main {
 /* section popup start */
 
 #fade {
-  background-color: #fff;
+  background-color: var(--white);
 
   border-radius: 16px;
 
@@ -1042,7 +1053,7 @@ main {
 
   padding: 12px 15px;
 
-  border: 1px solid #ddd;
+  border: 1px solid var(--light-black);
 
   border-radius: 6px;
 
@@ -1122,7 +1133,7 @@ main {
 /* footer section start  */
 
 #footer_sec {
-  background: #f9f9f9;
+  background: var(--sec-light-bg);
 
   border-top: 3px solid #ff7a28;
 }
@@ -1179,11 +1190,11 @@ main {
 
   font-weight: 300;
 
-  color: #000;
+  color: var(--black);
 }
 
 .footer_top_content p a:hover {
-  color: #ff7a28;
+  color: var(--blue);
 }
 
 .footer_bottom_left p {
@@ -1193,7 +1204,7 @@ main {
 }
 
 .footer_con .footer_bottom {
-  border-top: 1px solid #ddd;
+  border-top: 1px solid var(--light-black);
 
   display: flex;
 
@@ -1229,7 +1240,7 @@ main {
 
   text-decoration: none;
 
-  color: #000;
+  color: var(--black);
 
   background: none;
 
@@ -1243,7 +1254,7 @@ main {
 .social-icons a:hover {
   background: none;
 
-  color: #831396;
+  color: var(--blue);
 }
 
 /* footer section End  */
@@ -1296,6 +1307,7 @@ main {
     min-height: 350px;
     margin-left: 10px;
     margin-right: 10px;
+    /* border: 1px solid var(--light-black); */
   }
   #testimonials .testimonials_con .slider {
     margin-top: 20px;
