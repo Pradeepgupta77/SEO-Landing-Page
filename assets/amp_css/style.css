@@ -525,19 +525,10 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
-  margin-top: 30px;
+  gap: 30px;
+  margin-top: 150px;
 }
-.ourProcess_card_con .ourProcess_card{
-  height: 100%;
-  width: 20%;
-  min-height: 450px;
-  padding: 10px 15px;
-  background-image: url('../amp_images/white-box.png');
-  background-position: center ;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+
 .ourProcess_card img {
   transition: transform 0.3s ease;
 }
@@ -545,13 +536,28 @@ main {
 .ourProcess_card:hover img {
   transform: rotate(10deg);
 }
-.ourProcess_card .heading_3{
+.ourProcess_card_con .ourProcess_card {
+  height: 100%;
+  width: 20%;
+  padding: 10px 15px;
+}
+.ourProcess_card_text {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+.ourProcess_card_text .heading_3 {
+  font-size: 17px;
   text-align: center;
 }
-.ourProcess_card .boldpera{
+.ourProcess_card .boldpera {
   text-align: center;
   margin-top: 10px;
-  font-weight: 500;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.4;
+  text-align: center;
 }
 .ourProcess_card:nth-child(1) .heading_3{
   color: #f22e74;
@@ -568,10 +574,8 @@ main {
 .ourProcess_card:nth-child(5) .heading_3{
   color: #a017cb;
 }
-.ourProcess_card:nth-child(1),
-.ourProcess_card:nth-child(3),
-.ourProcess_card:nth-child(5){
-  padding-top: 70px;
+.ourProcess_card_con .ourProcess_card:nth-child(even) {
+  margin-top: -240px;
 }
 
 /* our process Wnd */
