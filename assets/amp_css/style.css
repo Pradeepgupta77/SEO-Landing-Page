@@ -105,6 +105,7 @@ main {
   align-items: center;
 
   justify-content: space-between;
+  position: relative;
 }
 
 .hero_con .hero_left {
@@ -295,11 +296,26 @@ main {
 #digitalMarketingPopupForm button,
 #digitalMarketingForm button {
   background: var(--btn-gradient);
-
-  color: var(--white);
+   color: var(--white);
 }
 
-
+.hero_con .hero_right_bg1{
+  position: absolute;
+  left: 50%;
+  z-index: -1;
+}
+.hero_con .hero_right_bg2{
+  position: absolute;
+  right:250px ;
+  top: -100px;
+  z-index: -1;
+}
+.hero_con .hero_right_bg3{
+  position: absolute;
+  right:-100px;
+  bottom: 0;
+  z-index: -1;
+}
 
 /*hero section  end */
 
@@ -530,7 +546,7 @@ main {
 .seoDiff_card_head img {
   background-color: #fff;
   border-radius: 50%;
-  padding: 15px;
+  /* padding: 15px; */
   width: 100px;
   position: absolute;
   left: 0;
@@ -701,6 +717,10 @@ main {
   width: 100%;
 
   margin-top: 40px;
+}
+.slider .slick-list.draggable{
+  padding: 0;
+  padding-right: 10px;
 }
 
 .slider .testimonial_card {
@@ -1329,9 +1349,9 @@ main {
 /* footer section start  */
 
 #footer_sec {
-  background: var(--sec-light-bg);
+  background: #0F0C37;
 
-  border-top: 3px solid #ff7a28;
+  /* border-top: 3px solid #ff7a28; */
 }
 
 .footer_con .footer_top {
@@ -1369,16 +1389,15 @@ main {
 .footer_bottom_right .boldpera,
 .footer_top_content .boldpera {
   font-size: 16px !important;
-
   margin-bottom: 5px;
-
   font-weight: 500;
+  color: var(--white);
 }
 
 .footer_bottom_right .boldpera {
   margin: 0;
-
   font-size: 14px !important;
+  color: var(--white);
 }
 
 .footer_top_content p a {
@@ -1386,7 +1405,7 @@ main {
 
   font-weight: 300;
 
-  color: var(--black);
+  color: var(--white);
 }
 
 .footer_top_content p a:hover {
@@ -1395,12 +1414,12 @@ main {
 
 .footer_bottom_left p {
   font-size: 14px;
-
   font-weight: 300;
+  color: var(--white);
 }
 
 .footer_con .footer_bottom {
-  border-top: 1px solid var(--light-black);
+  border-top: 1px solid var(--white);
 
   display: flex;
 
@@ -1436,7 +1455,7 @@ main {
 
   text-decoration: none;
 
-  color: var(--black);
+  color: var(--white);
 
   background: none;
 
@@ -1642,8 +1661,9 @@ main {
   #fade {
     margin: 20px 80px;
   }
-  #fade .hero_left p {
+  #fade .hero_left .normalpara {
     margin-top: 0px;
+    color: var(--black) !important;
   }
 }
 @media screen and (max-width: 768px) {
