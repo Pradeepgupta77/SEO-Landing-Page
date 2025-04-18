@@ -492,7 +492,31 @@ main {
 
 /* Our Clients section End*/
 
+/* SEO Diff start */
+
+#seoDiff{
+  background-image: url('../amp_images/bg1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.seoDiff_con .heading_2{
+  color: var(--white);
+  text-align: center;
+}
+.seoDiff_con .normalpara{
+  color: var(--white);
+  text-align: center;
+  margin-top: 15px;
+}
+.seoDiff_con .seoDiff_card_con {
+  width: 100%;
+  margin-top: 30px;
+}
+/* SEO Diff End */
+
 /* our process start */
+
 #ourProcess{
   background: var(--sec-dark-bg);
 }
@@ -508,20 +532,41 @@ main {
   height: 100%;
   width: 20%;
   min-height: 450px;
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-top: 10px;
+  padding: 10px 15px;
   background-image: url('../amp_images/white-box.png');
   background-position: center ;
   background-repeat: no-repeat;
   background-size: cover;
 }
+.ourProcess_card img {
+  transition: transform 0.3s ease;
+}
+
+.ourProcess_card:hover img {
+  transform: rotate(10deg);
+}
 .ourProcess_card .heading_3{
   text-align: center;
 }
-.ourProcess_card .normalpara{
+.ourProcess_card .boldpera{
   text-align: center;
   margin-top: 10px;
+  font-weight: 500;
+}
+.ourProcess_card:nth-child(1) .heading_3{
+  color: #f22e74;
+}
+.ourProcess_card:nth-child(2) .heading_3{
+  color: #f88800;
+}
+.ourProcess_card:nth-child(3) .heading_3{
+  color: #1fd0bb;
+}
+.ourProcess_card:nth-child(4) .heading_3{
+  color: #1883f2;
+}
+.ourProcess_card:nth-child(5) .heading_3{
+  color: #a017cb;
 }
 .ourProcess_card:nth-child(1),
 .ourProcess_card:nth-child(3),
