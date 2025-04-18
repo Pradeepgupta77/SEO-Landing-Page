@@ -541,6 +541,7 @@ main {
 .seoDiff_card_content {
   padding: 70px 40px 40px;
   text-align: center;
+  min-height: 260px;
 }
 .seoDiff_card .seoDiff_card_content .normalpara{
   color: var(--black);
@@ -809,11 +810,11 @@ main {
 }
 
 .testimonials_con .testimonial_btn_con a {
-  background-color: #ff7a28;
+  background: var(--btn-gradient);
 }
 
 .testimonials_con .testimonial_btn_con a {
-  color: #ffffff;
+  color: var(--white);
 }
 
 /* Testimonials End */
