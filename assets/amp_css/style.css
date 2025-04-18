@@ -512,10 +512,6 @@ main {
 .seoDiff_con .seoDiff_card_con {
   width: 100%;
   margin-top: 30px;
-  /* display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 30px; */
 }
 .seoDiff_card_con .seoDiff_card {
   background: var(--white);
@@ -524,11 +520,12 @@ main {
   margin: 0 15px 20px 15px;
 }
 .seoDiff_card .seoDiff_card_head {
-  background: black;
+  background: var(--btn-gradient);
   border-radius: 16px 16px 0 0;
   text-align: center;
   height: 120px;
   position: relative;
+  width: 100%;
 }
 .seoDiff_card_head img {
   background-color: #fff;
