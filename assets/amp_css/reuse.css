@@ -1,5 +1,32 @@
 /* resubale class and id start */
 
+button.slick-prev.slick-arrow:before {
+  display: none;
+}
+button.slick-prev.slick-arrow {
+    height: 35px;
+    width: 35px;
+    background-image: url(../amp_images/arrow-left.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 9;
+}
+button.slick-next.slick-arrow:before {
+  display: none;
+}
+button.slick-next.slick-arrow {
+    height: 35px;
+    width: 35px;
+    background-image: url(../amp_images/arrow-right.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 9;
+}
+.slick-list.draggable{
+  padding: 0 10px;
+}
 .sec {
   display: flex;
 

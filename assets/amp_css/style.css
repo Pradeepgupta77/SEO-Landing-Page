@@ -495,7 +495,7 @@ main {
 /* SEO Diff start */
 
 #seoDiff{
-  background-image: url('../amp_images/bg1.jpg');
+  background-image: url('../amp_images/bg3.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -537,6 +537,12 @@ main {
   right: 0;
   margin: 0 auto;
   bottom: -50px;
+  transition: transform 0.3s ease;
+}
+
+
+.seoDiff_card:hover img {
+  transform: translateY(-5px);
 }
 .seoDiff_card_content {
   padding: 70px 40px 40px;
@@ -545,6 +551,9 @@ main {
 }
 .seoDiff_card .seoDiff_card_content .normalpara{
   color: var(--black);
+}
+#seoDiff .slick-dots li button:before{
+  color: var(--white);
 }
 /* SEO Diff End */
 
@@ -981,7 +990,7 @@ main {
 /* Strategy Call Section Start */
 
 #strategyCall {
-  background: url("../amp_images/call-to-action-bg.jpg");
+  background: url("../amp_images/bg2.jpg");
 
   display: flex;
 
