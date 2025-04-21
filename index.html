@@ -115,9 +115,7 @@
           </div>
           <div class="hero_right">
             <div
-              class="hero_form_con fade-effect"
-              fade-time="3"
-              fade-direction="right"
+              class="hero_form_con"
             >
               <h3 class="heading_3">
                 Let’s Get
@@ -188,7 +186,6 @@
                 </button>
               </form>
             </div>
-            <img class="hero_right_bg3" src="" alt="" />
           </div>
         </div>
       </section>
@@ -677,6 +674,58 @@
             <div class="ourProcess_card fade-effect" fade-time="2" fade-direction="zoom">
               <img src="./assets/amp_images/box5.png" alt="" />
               <div class="ourProcess_card_text">
+                <h3 class="heading_3">Optimize. <br />Scale. Repeat.</h3>
+                <p class="boldpera">
+                  Because SEO is not a campaign — it’s a growth system.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="ourProcess_card_con_slider">
+
+            <div class="ourProcess_slider_card">
+              <img src="./assets/amp_images/box1.png" alt="" />
+              <div class="ourProcess_slider_card_text">
+                <h3 class="heading_3">Get <br />Discovered</h3>
+                <p class="boldpera">
+                  Let your ideal customer find YOU — not your competitor.
+                </p>
+              </div>
+            </div>
+
+            <div class="ourProcess_slider_card">
+              <img src="./assets/amp_images/box2.png" alt="" />
+              <div class="ourProcess_slider_card_text">
+                <h3 class="heading_3">Attract the<br />Right Audience</h3>
+                <p class="boldpera">
+                  Not just traffic — the right traffic that actually converts.
+                </p>
+              </div>
+            </div>
+
+            <div class="ourProcourProcess_slider_cardess_card">
+              <img src="./assets/amp_images/box3.png" alt="" />
+              <div class="ourProcess_slider_card_text">
+                <h3 class="heading_3">Turn Traffic<br />Into Leads</h3>
+                <p class="boldpera">
+                  Your website becomes your best salesperson
+                </p>
+              </div>
+            </div>
+
+            <div class="ourProcess_slider_card">
+              <img src="./assets/amp_images/box4.png" alt="" />
+              <div class="ourProcess_slider_card_text">
+                <h3 class="heading_3">Build Brand <br />Authority & Trust</h3>
+                <p class="boldpera">
+                  Be everywhere your customers look — and win their trust.
+                </p>
+              </div>
+            </div>
+
+            <div class="ourProcess_slider_card">
+              <img src="./assets/amp_images/box5.png" alt="" />
+              <div class="ourProcess_slider_card_text">
                 <h3 class="heading_3">Optimize. <br />Scale. Repeat.</h3>
                 <p class="boldpera">
                   Because SEO is not a campaign — it’s a growth system.
@@ -1420,6 +1469,32 @@
         });
         // seoDiff_card_con
         $(".seoDiff_card_con").slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          autoplay: false,
+          autoplaySpeed: 2000,
+          dots: true,
+          arrows: true,
+          responsive: [
+            {
+              breakpoint: 1030,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+              },
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+          ],
+        });
+        // ourProcess_card_con_slider
+        $(".ourProcess_card_con_slider").slick({
           slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,

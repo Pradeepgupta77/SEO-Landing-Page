@@ -649,6 +649,36 @@ main {
 .ourProcess_card_con .ourProcess_card:nth-child(even) {
   margin-top: -240px;
 }
+.ourProcess_card_con_slider{
+  display: none !important;
+}
+.ourProcess_slider_card{
+  margin: 0 10px 20px 10px;
+}
+.ourProcess_slider_card_text{
+  background: var(--white);
+  padding: 24px;
+  text-align: center;
+  border-radius: 12px;
+}
+.ourProcess_slider_card_text .heading_3{
+  margin-bottom: 10px;
+}
+.ourProcess_slider_card_text:nth-child(1) .heading_3{
+  color: #f22e74;
+}
+.ourProcess_slider_card_text:nth-child(2) .heading_3{
+  color: #f88800;
+}
+.ourProcess_slider_card_text:nth-child(3) .heading_3{
+  color: #1fd0bb;
+}
+.ourProcess_slider_card_text:nth-child(4) .heading_3{
+  color: #1883f2;
+}
+.ourProcess_slider_card_text:nth-child(5) .heading_3{
+  color: #a017cb;
+}
 
 /* our process Wnd */
 
@@ -1531,6 +1561,8 @@ main {
   #testimonials .container.testimonials_con {
     max-width: 100%;
   }
+  #ourProcess .Service_con .slick-next,
+  #ourProcess .Service_con .slick-prev ,
   #seoDiff .seoDiff_con .slick-next,
   #seoDiff .seoDiff_con .slick-prev ,
   #Service .Service_con .slick-next,
@@ -1929,6 +1961,46 @@ main {
   #cashStudy .cashStudy_con .tabcontent {
     padding: 8px;
   }
+  .hero_con .hero_right_bg2{
+    top: -75px;
+    left: -80px;
+    width: 150px;
+  }
+  .hero_con .hero_right_bg1{
+    left: 60%;
+    top: 25%;
+  }
+  .hero_con .hero_right_bg3{
+    display: none;
+  }
+  .hero_right .hero_form_con{
+    min-width: none;
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  .hero_form_con::before{
+    right: 4px;
+    top: -22px;
+  }
+  .hero_form_con::after{
+    bottom: 0;
+  }
+  .hero_left ul{
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+  }
+  .hero_left ul li{
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+  }
+  .ourProcess_card_con{
+    display: none;
+  }
+  .ourProcess_card_con_slider{
+    display: block !important;
+  }
 }
 @media screen and (max-width: 412px) {
   #whatMakesDifferent .whatMakesDifferent_first_cont,
@@ -1948,6 +2020,7 @@ main {
   #ourService .ourService_card h3 {
     font-size: 12px !important;
   }
+  
 }
 @media screen and (max-width: 370px) {
   #footer_sec .footer_bottom .footer_bottom_right .social-icons a {
