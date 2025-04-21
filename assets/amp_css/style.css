@@ -1488,14 +1488,12 @@ main {
   #hero .hero_left h1 {
     font-size: 36px;
   }
-  #hero .hero_left ul li img {
-    width: 16px;
-  }
   #hero .hero_left .star_image {
     width: 100px;
   }
   #hero .hero_left > p {
     margin-top: 10px;
+    width: 100%;
   }
   #hero .hero_form_con h3 {
     font-size: 20px !important;
@@ -1533,6 +1531,10 @@ main {
   #testimonials .container.testimonials_con {
     max-width: 100%;
   }
+  #seoDiff .seoDiff_con .slick-next,
+  #seoDiff .seoDiff_con .slick-prev ,
+  #Service .Service_con .slick-next,
+  #Service .Service_con .slick-prev ,
   #testimonials .testimonials_con .slick-next,
   #testimonials .testimonials_con .slick-prev {
     display: none !important;
@@ -1543,12 +1545,42 @@ main {
   #hero .hero_left ul li img:nth-child(3) {
     width: 90px;
   }
-  button.slick-next.slick-arrow,
-  button.slick-prev.slick-arrow{
-    display: none;
-  }
   .Service_con .service_slider_card{
     margin: 0 11px 20px 11px;
+  }
+  .ourProcess_card_con{
+    flex-wrap: wrap;
+  }
+  .ourProcess_card_con .ourProcess_card{
+    width: 45%;
+  }
+  .ourProcess_card_con .ourProcess_card:nth-child(even) {
+    margin-top: 0;
+  }
+  .ourProcess_card_con .ourProcess_card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .ourProcess_card_con .ourProcess_card:last-child{
+    width: 100%;
+  }
+  .Service_con .normalpara {
+    margin-bottom: 30px;
+  }
+  .hero_left ul{
+    gap: 5px;
+  }
+  .hero_left ul li{
+    flex-direction: column;
+    align-items: start;
+  }
+  #hero .hero_left ul li img {
+    width: auto;
+  }
+  .ourProcess_card_con{
+    margin-top: 30px;
   }
 }
 @media screen and (max-width: 932px) {
@@ -1880,6 +1912,9 @@ main {
   }
   #fade .hero_right .hero_form_con h3 {
     font-size: 18px !important;
+  }
+  .ourProcess_card_con .ourProcess_card{
+    width: 100%;
   }
 }
 @media screen and (max-width: 600px) {
