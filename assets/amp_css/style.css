@@ -1543,6 +1543,13 @@ main {
   #hero .hero_left ul li img:nth-child(3) {
     width: 90px;
   }
+  button.slick-next.slick-arrow,
+  button.slick-prev.slick-arrow{
+    display: none;
+  }
+  .Service_con .service_slider_card{
+    margin: 0 11px 20px 11px;
+  }
 }
 @media screen and (max-width: 932px) {
   #hero .hero_left h1 {
