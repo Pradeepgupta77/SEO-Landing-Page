@@ -84,12 +84,26 @@ main {
   justify-content: center;
   background: green;
   z-index: 1;
+  animation: pulse 2s infinite;
 }
 #absolute_whatsapp_btn i{
   color: var(--white);
   font-size: 40px;
 }
-
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 128, 0, 0.7);
+  }
+  70% {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 15px rgba(0, 128, 0, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 128, 0, 0);
+  }
+}
 /* whatsApp btn End */
 
 /* hero section start*/
@@ -1421,8 +1435,7 @@ main {
 
 #footer_sec {
   background: #0f0c37;
-
-  /* border-top: 3px solid #ff7a28; */
+  z-index: 2;
 }
 
 .footer_con .footer_top {
@@ -1654,6 +1667,9 @@ main {
   }
   .ourProcess_card_con {
     margin-top: 30px;
+  }
+  #absolute_whatsapp_btn{
+    right: 15px;
   }
 }
 @media screen and (max-width: 932px) {
