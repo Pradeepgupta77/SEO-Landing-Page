@@ -183,8 +183,12 @@
               </h3>
 
               <form id="digitalMarketingForm" action="#" method="POST">
-
-                <input type="text" class="Form_type" value="Banner" style="display: none;">
+                <input
+                  type="text"
+                  class="Form_type"
+                  value="Banner"
+                  style="display: none"
+                />
 
                 <input
                   type="text"
@@ -908,11 +912,10 @@
               <h2 class="heading_2">01</h2>
 
               <div class="service_slider_card_text">
-                <h3 class="heading_3">On-Page SEO</h3>
+                <h3 class="heading_3">National SEO</h3>
 
                 <p class="normalpara">
-                  Optimizing website content, structure, and HTML tags to
-                  improve visibility and relevance for search engines.
+                  Perfect for businesses looking to dominate search results across India.
                 </p>
               </div>
             </div>
@@ -924,11 +927,10 @@
               <h2 class="heading_2">02</h2>
 
               <div class="service_slider_card_text">
-                <h3 class="heading_3">Off-Page SEO</h3>
+                <h3 class="heading_3">Local SEO</h3>
 
                 <p class="normalpara">
-                  Building authority through backlinks, brand mentions, and
-                  external engagement to boost search rankings.
+                  Ideal for businesses targeting specific cities or regions (great for clinics, salons, restaurants, etc.)
                 </p>
               </div>
             </div>
@@ -940,11 +942,10 @@
               <h2 class="heading_2">03</h2>
 
               <div class="service_slider_card_text">
-                <h3 class="heading_3">Technical SEO</h3>
+                <h3 class="heading_3">E-commerce SEO</h3>
 
                 <p class="normalpara">
-                  Improving website infrastructure to ensure smooth crawling,
-                  indexing, and performance by search engines.
+                  Tailored for online stores to drive product discovery and sales through organic search.
                 </p>
               </div>
             </div>
@@ -956,11 +957,10 @@
               <h2 class="heading_2">04</h2>
 
               <div class="service_slider_card_text">
-                <h3 class="heading_3">Local SEO</h3>
+                <h3 class="heading_3">App Store Optimization (ASO)</h3>
 
                 <p class="normalpara">
-                  Enhancing online presence for local searches through maps
-                  listings, reviews, and local keyword targeting.
+                  For businesses with mobile apps aiming to boost visibility and installs on app marketplaces.
                 </p>
               </div>
             </div>
@@ -972,11 +972,10 @@
               <h2 class="heading_2">05</h2>
 
               <div class="service_slider_card_text">
-                <h3 class="heading_3">E-commerce SEO</h3>
+                <h3 class="heading_3">Enterprise SEO Services</h3>
 
                 <p class="normalpara">
-                  Optimizing product pages and categories to increase visibility
-                  and sales for online stores.
+                  A high-ticket, advanced SEO solution for large-scale businesses with complex needs.
                 </p>
               </div>
             </div>
@@ -988,11 +987,10 @@
               <h2 class="heading_2">06</h2>
 
               <div class="service_slider_card_text">
-                <h3 class="heading_3">Mobile SEO</h3>
+                <h3 class="heading_3">International SEO</h3>
 
                 <p class="normalpara">
-                  Ensuring your website is fast, responsive, and user-friendly
-                  across all mobile devices.
+                  Targeting global audiences? This service helps optimize content for multilingual & multi-regional visibility.
                 </p>
               </div>
             </div>
@@ -1458,7 +1456,12 @@
                 <h3 class="heading_3">Start Your SEO Journey Today</h3>
 
                 <form id="digitalMarketingPopupForm" action="#" method="POST">
-                  <input type="text" class="Form_type" value="Popup" style="display: none;">
+                  <input
+                    type="text"
+                    class="Form_type"
+                    value="Popup"
+                    style="display: none"
+                  />
 
                   <input
                     type="text"
@@ -1961,28 +1964,16 @@
       digitalMarketingForm.addEventListener("submit", async (e) => {
         e.preventDefault();
 
-        let Form_type = document.getElementsByClassName(
-          "Form_type"
-        )[0].value;
-        let Name = document.getElementsByClassName(
-          "Name"
-        )[0].value;
+        let Form_type = document.getElementsByClassName("Form_type")[0].value;
+        let Name = document.getElementsByClassName("Name")[0].value;
 
-        let Email = document.getElementsByClassName(
-          "Email"
-        )[0].value;
+        let Email = document.getElementsByClassName("Email")[0].value;
 
-        let Phone = document.getElementsByClassName(
-          "Phone"
-        )[0].value;
+        let Phone = document.getElementsByClassName("Phone")[0].value;
 
-        let Service = document.getElementById(
-          "Service"
-        ).value;
+        let Service = document.getElementById("Service").value;
 
-        let Message = document.getElementsByClassName(
-          "Message"
-        )[0].value;
+        let Message = document.getElementsByClassName("Message")[0].value;
 
         try {
           await addDoc(collection(db, "SEO"), {
@@ -2021,33 +2012,21 @@
       digitalMarketingPopupForm.addEventListener("submit", async (e) => {
         e.preventDefault();
 
-        let Form_type = document.getElementsByClassName(
-          "Form_type"
-        )[1].value;
-        let Name = document.getElementsByClassName(
-          "Name"
-        )[1].value;
+        let Form_type = document.getElementsByClassName("Form_type")[1].value;
+        let Name = document.getElementsByClassName("Name")[1].value;
 
-        let Email = document.getElementsByClassName(
-          "Email"
-        )[1].value;
+        let Email = document.getElementsByClassName("Email")[1].value;
 
-        let Phone = document.getElementsByClassName(
-          "Phone"
-        )[1].value;
+        let Phone = document.getElementsByClassName("Phone")[1].value;
 
-        let Website = document.getElementById(
-          "Website"
-        ).value;
+        let Website = document.getElementById("Website").value;
 
-        let Message = document.getElementsByClassName(
-          "Message"
-        )[1].value;
+        let Message = document.getElementsByClassName("Message")[1].value;
 
         try {
           await addDoc(collection(db, "SEO"), {
             Form_type,
-            
+
             Name,
 
             Email,
