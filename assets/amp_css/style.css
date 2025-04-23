@@ -1719,11 +1719,11 @@ main {
 
   font-weight: 300;
 
-  color: var(--white);
+  color: var(--light-black);
 }
 
 .footer_top_content p a:hover {
-  color: var(--blue);
+  color: var(--white);
 }
 
 .footer_bottom_left p {
@@ -1771,7 +1771,7 @@ main {
 
   text-decoration: none;
 
-  color: var(--white);
+  color: var(--light-black);
 
   background: none;
 
@@ -1785,7 +1785,7 @@ main {
 .social-icons a:hover {
   background: none;
 
-  color: var(--blue);
+  color: var(--white);
 }
 
 /* footer section End  */
