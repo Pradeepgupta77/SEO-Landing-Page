@@ -1066,18 +1066,17 @@ main {
   width: 100%;
 }
 
-.testimonial_card p {
+.testimonial_card>p {
   text-align: start;
+  min-height: 230px;
 }
 
 .testimonial_card .testimonial_card_user_details {
   border-top: 1px solid #ddd;
-
   position: relative;
-
   padding-top: 25px;
-
   width: 100%;
+  min-height: 140px;
 }
 
 .slick-initialized .slick-slide {
