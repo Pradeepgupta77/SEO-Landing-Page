@@ -1945,6 +1945,9 @@ main {
     right: 15px;
     bottom: 50px;
   }
+  .testimonial_card>p {
+    min-height: 180px;
+  }
 }
 
 @media screen and (max-width: 932px) {
@@ -2420,6 +2423,9 @@ main {
 
   .ourProcess_card_con .ourProcess_card {
     width: 100%;
+  }
+  .testimonial_card .testimonial_card_user_details{
+    min-height: 120px;
   }
 }
 
