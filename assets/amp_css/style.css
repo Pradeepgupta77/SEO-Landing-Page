@@ -134,6 +134,79 @@ main {
 
 /* whatsApp btn End */
 
+/* mobile flowting btn start  */
+.floating-btn-container {
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  z-index: 999;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+  display: none;
+}
+
+.main-btn {
+  background-color: #fda203;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.action-btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(0);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  background: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.action-btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.show .whatsapp-btn {
+  transform: translateY(-70px);
+  opacity: 1;
+  pointer-events: auto;
+  background: #008000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.whatsapp-btn i {
+  color: var(--white);
+  font-size: 36px;
+}
+.show .call-btn {
+  transform: translateY(-140px);
+  opacity: 1;
+  pointer-events: auto;
+  background: #a80ac7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.call-btn i {
+  color: var(--white);
+  font-size: 32px;
+}
+/* mobile flowting btn End  */
+
 /* hero section start*/
 
 #hero {
@@ -267,7 +340,7 @@ main {
 .hero_right .hero_form_con {
   background: var(--white);
 
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 
   border-radius: 12px;
 
@@ -626,25 +699,17 @@ main {
 
 .seoDiff_card_con .seoDiff_card {
   background: var(--white);
-
-  border-radius: 16px;
-
-  /* margin-bottom: 20px; */
-
+  border-radius: 12px;
   margin: 0 15px 20px 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .seoDiff_card .seoDiff_card_head {
   background: var(--btn-gradient);
-
-  border-radius: 16px 16px 0 0;
-
+  border-radius: 12px 12px 0 0;
   text-align: center;
-
   height: 120px;
-
   position: relative;
-
   width: 100%;
 }
 
@@ -730,14 +795,11 @@ main {
 
 .ourProcess_card_text {
   background-color: #fff;
-
   padding: 25px;
-
-  border-radius: 8px;
-
+  border-radius: 12px;
   margin-top: 35px;
-
   position: relative;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .ourProcess_card_text::after {
@@ -914,48 +976,30 @@ main {
 
 .Service_con .service_slider_card {
   width: 32%;
-
   min-height: 450px;
-
-  border-radius: 24px;
-
+  border-radius: 12px;
   position: relative;
-
   margin: 0 10px 20px 10px;
-
   background-position: center;
-
   background-repeat: no-repeat;
-
   background-size: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .service_slider_card_text {
   background-image: url("../amp_images/overlay.png");
-
   background-size: 100% auto;
-
   height: 100%;
-
   padding: 24px;
-
   background-position: bottom center;
-
   position: absolute;
-
   background-repeat: no-repeat;
-
   vertical-align: bottom;
-
   display: flex;
-
   flex-direction: column;
-
   align-items: start;
-
   justify-content: end;
-
-  border-radius: 0 0 24px 24px;
+  border-radius: 0 0 12px 12px;
 }
 
 .service_slider_card .heading_2 {
@@ -1012,23 +1056,15 @@ main {
 
 .slider .testimonial_card {
   width: 31%;
-
   height: 100%;
-
   min-height: 400px;
-
   background-color: #fff;
-
   margin-left: 20px;
-
   position: relative;
-
   padding: 40px 24px 24px 24px;
-
-  border: none;
-
   border-radius: 12px;
-
+  border: 1px solid var(--light-black);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   overflow: visible;
 }
 
@@ -1066,7 +1102,7 @@ main {
   width: 100%;
 }
 
-.testimonial_card>p {
+.testimonial_card > p {
   text-align: start;
   min-height: 230px;
 }
@@ -1428,38 +1464,26 @@ main {
 
 .faq-item {
   background: var(--white);
-
+  border-radius: 12px;
   border: 1px solid var(--light-black);
-
-  border-radius: 4px;
-
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   overflow: hidden;
-
   transition: all 0.3s ease;
 }
 
 .faq-question {
   width: 100%;
-
   padding: 18px 20px;
-
   background: var(--white);
-
-  border: none;
-
-  border-bottom: 1px solid var(--light-black);
-
   font-size: 16px;
-
   text-align: left;
-
   cursor: pointer;
-
   position: relative;
-
   font-weight: 600;
-
   color: var(--black);
+  border-radius: 12px;
+  border-bottom: 1px solid var(--light-black);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .faq-question::after {
@@ -1492,19 +1516,12 @@ main {
 
 .faq-answer {
   max-height: 0;
-
   overflow: hidden;
-
   padding: 0 20px;
-
   background: var(--white);
-
   transition: all 0.3s ease;
-
   color: #333;
-
   font-size: 16px;
-
   font-weight: 400;
 }
 
@@ -1945,8 +1962,14 @@ main {
     right: 15px;
     bottom: 50px;
   }
-  .testimonial_card>p {
+  .testimonial_card > p {
     min-height: 180px;
+  }
+  .floating-btn-container {
+    display: block;
+  }
+  #absolute_whatsapp_btn{
+    display: none;
   }
 }
 
@@ -2424,7 +2447,7 @@ main {
   .ourProcess_card_con .ourProcess_card {
     width: 100%;
   }
-  .testimonial_card .testimonial_card_user_details{
+  .testimonial_card .testimonial_card_user_details {
     min-height: 120px;
   }
 }

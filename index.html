@@ -61,6 +61,23 @@
 
       <!-- whatsApp btn Start -->
 
+      <!-- mobile flowting btn start  -->
+      <div class="floating-btn-container">
+        <button id="mainBtn" class="main-btn">+</button>
+        <a
+          href="https://wa.link/frutt4"
+          target="_blank"
+          class="action-btn whatsapp-btn"
+          title="WhatsApp"
+        >
+          <i class="ri-whatsapp-line"></i>
+        </a>
+        <a href="tel:+1234567890" class="action-btn call-btn" title="Call">
+          <i class="ri-phone-fill"></i>
+        </a>
+      </div>
+      <!-- mobile flowting btn End  -->
+
       <!-- hero section start -->
 
       <section data-scroll-section id="hero" class="sec">
@@ -907,7 +924,8 @@
                 <h3 class="heading_3">National SEO</h3>
 
                 <p class="normalpara">
-                  Perfect for businesses looking to dominate search results across India.
+                  Perfect for businesses looking to dominate search results
+                  across India.
                 </p>
               </div>
             </div>
@@ -922,7 +940,8 @@
                 <h3 class="heading_3">Local SEO</h3>
 
                 <p class="normalpara">
-                  Ideal for businesses targeting specific cities or regions (great for clinics, salons, restaurants, etc.)
+                  Ideal for businesses targeting specific cities or regions
+                  (great for clinics, salons, restaurants, etc.)
                 </p>
               </div>
             </div>
@@ -937,7 +956,8 @@
                 <h3 class="heading_3">E-commerce SEO</h3>
 
                 <p class="normalpara">
-                  Tailored for online stores to drive product discovery and sales through organic search.
+                  Tailored for online stores to drive product discovery and
+                  sales through organic search.
                 </p>
               </div>
             </div>
@@ -952,7 +972,8 @@
                 <h3 class="heading_3">App Store Optimization (ASO)</h3>
 
                 <p class="normalpara">
-                  For businesses with mobile apps aiming to boost visibility and installs on app marketplaces.
+                  For businesses with mobile apps aiming to boost visibility and
+                  installs on app marketplaces.
                 </p>
               </div>
             </div>
@@ -967,7 +988,8 @@
                 <h3 class="heading_3">Enterprise SEO Services</h3>
 
                 <p class="normalpara">
-                  A high-ticket, advanced SEO solution for large-scale businesses with complex needs.
+                  A high-ticket, advanced SEO solution for large-scale
+                  businesses with complex needs.
                 </p>
               </div>
             </div>
@@ -982,7 +1004,8 @@
                 <h3 class="heading_3">International SEO</h3>
 
                 <p class="normalpara">
-                  Targeting global audiences? This service helps optimize content for multilingual & multi-regional visibility.
+                  Targeting global audiences? This service helps optimize
+                  content for multilingual & multi-regional visibility.
                 </p>
               </div>
             </div>
@@ -1332,8 +1355,6 @@
       <section data-scroll-section id="faq" class="sec">
         <div class="container faq_con">
           <div class="faq-heading">
-            <!-- <h3 class="heading_3"><span>All</span> FAQ's</h3> -->
-
             <h2
               class="heading_2 fade-effect"
               fade-time="2"
@@ -1622,6 +1643,8 @@
       <!-- footer section End -->
     </main>
 
+
+
     <!-- jQuery & Plugins -->
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -1804,6 +1827,8 @@
       });
     </script>
 
+
+
     <!-- Locomotive Scroll CDN -->
 
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
@@ -1872,179 +1897,12 @@
       });
     </script>
 
-    <!--  cash study start -->
+    <!-- js  -->
+     <script src="./assets/amp_js/script.js"></script>
 
-    <script>
-      function openCity(evt, cityName) {
-        var i, tabcontent, tablinks;
+    <!-- Firebase Form JS -->
 
-        tabcontent = document.getElementsByClassName("tabcontent");
-
-        for (i = 0; i < tabcontent.length; i++) {
-          tabcontent[i].style.display = "none";
-        }
-
-        tablinks = document.getElementsByClassName("tablinks");
-
-        for (i = 0; i < tablinks.length; i++) {
-          tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-
-        document.getElementById(cityName).style.display = "block";
-
-        evt.currentTarget.className += " active";
-      }
-
-      // cash study End
-    </script>
-
-    <!-- FAQ Accordion -->
-
-    <script>
-      const faqItems = document.querySelectorAll(".faq-item");
-
-      faqItems.forEach((item) => {
-        const question = item.querySelector(".faq-question");
-
-        question.addEventListener("click", () => {
-          faqItems.forEach((i) => {
-            if (i !== item) i.classList.remove("active");
-          });
-
-          item.classList.toggle("active");
-        });
-      });
-    </script>
-
-    <!-- cash study start -->
-
-    <!-- Firebase Form Submission -->
-
-    <script type="module">
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
-
-      import {
-        getFirestore,
-        collection,
-        addDoc,
-      } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
-
-      const firebaseConfig = {
-        apiKey: "AIzaSyDo9IkyF4FFGzuaVuGSnn3Q5nZMvlnoXDk",
-
-        authDomain: "amplivista-landing-page.firebaseapp.com",
-
-        projectId: "amplivista-landing-page",
-
-        storageBucket: "amplivista-landing-page.appspot.com",
-
-        messagingSenderId: "915033881576",
-
-        appId: "1:915033881576:web:6e6d801c5a5f13f99e425d",
-      };
-
-      const app = initializeApp(firebaseConfig);
-
-      const db = getFirestore(app);
-
-      // main form start
-
-      const digitalMarketingForm = document.getElementById(
-        "digitalMarketingForm"
-      );
-
-      digitalMarketingForm.addEventListener("submit", async (e) => {
-        e.preventDefault();
-
-        let Form_type = document.getElementsByClassName("Form_type")[0].value;
-        let Name = document.getElementsByClassName("Name")[0].value;
-
-        let Email = document.getElementsByClassName("Email")[0].value;
-
-        let Phone = document.getElementsByClassName("Phone")[0].value;
-
-        let Service = document.getElementById("Service").value;
-
-        let Message = document.getElementsByClassName("Message")[0].value;
-
-        try {
-          await addDoc(collection(db, "SEO"), {
-            Form_type,
-
-            Name,
-
-            Email,
-
-            Phone,
-
-            Message,
-
-            timestamp: new Date(),
-          });
-
-          window.location.href =
-            "https://amplivista.com/search-engine-optimization-agency/thank-you.php";
-
-          digitalMarketingForm.reset();
-        } catch (err) {
-          console.error("Error adding document: ", err);
-
-          alert("Something went wrong. Check console.");
-        }
-      });
-
-      // main form End
-
-      // popup form start
-
-      const digitalMarketingPopupForm = document.getElementById(
-        "digitalMarketingPopupForm"
-      );
-
-      digitalMarketingPopupForm.addEventListener("submit", async (e) => {
-        e.preventDefault();
-
-        let Form_type = document.getElementsByClassName("Form_type")[1].value;
-        let Name = document.getElementsByClassName("Name")[1].value;
-
-        let Email = document.getElementsByClassName("Email")[1].value;
-
-        let Phone = document.getElementsByClassName("Phone")[1].value;
-
-        let Website = document.getElementById("Website").value;
-
-        let Message = document.getElementsByClassName("Message")[1].value;
-
-        try {
-          await addDoc(collection(db, "SEO"), {
-            Form_type,
-
-            Name,
-
-            Email,
-
-            Phone,
-
-            Website,
-
-            Message,
-
-            timestamp: new Date(),
-          });
-
-          window.location.href =
-            "https://amplivista.com/search-engine-optimization-agency/thank-you.php";
-
-          digitalMarketingPopupForm.reset();
-        } catch (err) {
-          console.error("Error adding document: ", err);
-
-          alert("Something went wrong. Check console.");
-        }
-      });
-
-      // popup form End
-    </script>
+    <script type="module" src="./assets/amp_js/Firebase.js"></script>
 
     <!-- Optional Custom Scroll Animations -->
 
