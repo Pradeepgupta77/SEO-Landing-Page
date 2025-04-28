@@ -1643,9 +1643,6 @@
       <!-- footer section End -->
     </main>
 
-   <!-- js  -->
-   <script src="./assets/amp_js/script.js"></script>
-
     <!-- jQuery & Plugins -->
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -1828,9 +1825,7 @@
       });
     </script>
 
-
-
-    <!-- Locomotive Scroll CDN -->
+    <!-- Locomotive Scroll Start -->
 
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
 
@@ -1898,7 +1893,67 @@
       });
     </script>
 
- 
+    <!-- Locomotive Scroll End -->
+
+    <!-- cash study start -->
+
+    <script>
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+
+        tabcontent = document.getElementsByClassName("tabcontent");
+
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+
+        tablinks = document.getElementsByClassName("tablinks");
+
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        document.getElementById(cityName).style.display = "block";
+
+        evt.currentTarget.className += " active";
+      }
+    </script>
+
+    <!-- cash study End -->
+
+    <!-- FAQ Accordion Start -->
+    <script>
+      const faqItems = document.querySelectorAll(".faq-item");
+
+      faqItems.forEach((item) => {
+        const question = item.querySelector(".faq-question");
+
+        question.addEventListener("click", () => {
+          faqItems.forEach((i) => {
+            if (i !== item) i.classList.remove("active");
+          });
+
+          item.classList.toggle("active");
+        });
+      });
+    </script>
+    <!-- FAQ Accordion End -->
+
+    <!-- mobile flowting btn js start -->
+
+    <script>
+      const mainBtn = document.getElementById("mainBtn");
+      const btnContainer = document.querySelector(".floating-btn-container");
+
+      mainBtn.addEventListener("click", () => {
+        btnContainer.classList.toggle("show");
+      });
+    </script>
+
+    <!-- mobile flowting btn js End -->
+
+    <!-- js  -->
+    <script src="./assets/amp_js/script.js"></script>
 
     <!-- Firebase Form JS -->
 

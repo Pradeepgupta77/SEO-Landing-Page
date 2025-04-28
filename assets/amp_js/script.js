@@ -173,53 +173,36 @@ let scroll;
 
 // cash study start
 
-function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
+// function openCity(evt, cityName) {
+//   var i, tabcontent, tablinks;
 
-  tabcontent = document.getElementsByClassName("tabcontent");
+//   tabcontent = document.getElementsByClassName("tabcontent");
 
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
+//   for (i = 0; i < tabcontent.length; i++) {
+//     tabcontent[i].style.display = "none";
+//   }
 
-  tablinks = document.getElementsByClassName("tablinks");
+//   tablinks = document.getElementsByClassName("tablinks");
 
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
+//   for (i = 0; i < tablinks.length; i++) {
+//     tablinks[i].className = tablinks[i].className.replace(" active", "");
+//   }
 
-  document.getElementById(cityName).style.display = "block";
+//   document.getElementById(cityName).style.display = "block";
 
-  evt.currentTarget.className += " active";
-}
+//   evt.currentTarget.className += " active";
+// }
 
 // cash study End
 
 // FAQ Accordion Start
 
-const faqItems = document.querySelectorAll(".faq-item");
 
-faqItems.forEach((item) => {
-  const question = item.querySelector(".faq-question");
-
-  question.addEventListener("click", () => {
-    faqItems.forEach((i) => {
-      if (i !== item) i.classList.remove("active");
-    });
-
-    item.classList.toggle("active");
-  });
-});
 
 // FAQ Accordion End
 
 // mobile flowting btn js start
 
-const mainBtn = document.getElementById("mainBtn");
-const btnContainer = document.querySelector(".floating-btn-container");
 
-mainBtn.addEventListener("click", () => {
-  btnContainer.classList.toggle("show");
-});
 
 // mobile flowting btn js End
