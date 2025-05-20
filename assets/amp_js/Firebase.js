@@ -41,6 +41,7 @@ digitalMarketingForm.addEventListener("submit", async (e) => {
   let Service = document.getElementById("Service").value;
 
   let Message = document.getElementsByClassName("Message")[0].value;
+  Name = Name.trim();
 
   try {
     await addDoc(collection(db, "SEO"), {
@@ -89,6 +90,7 @@ digitalMarketingPopupForm.addEventListener("submit", async (e) => {
   let Website = document.getElementById("Website").value;
 
   let Message = document.getElementsByClassName("Message")[1].value;
+  Name = Name.trim();
 
   try {
     await addDoc(collection(db, "SEO"), {

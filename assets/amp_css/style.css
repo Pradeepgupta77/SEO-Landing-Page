@@ -1110,7 +1110,7 @@ main {
   position: relative;
   padding-top: 25px;
   width: 100%;
-  min-height: 140px;
+  min-height: 100px;
 }
 
 .slick-initialized .slick-slide {
@@ -2546,6 +2546,20 @@ main {
 @media screen and (max-width: 540px) {
   #whatMakesDifferent .whatMakesDifferent_features {
     min-height: 250px;
+  }
+  #fade .hero_left .hero_logo {
+    display: none;
+  }
+  #fade .hero_right .hero_form_con h3 {
+    font-size: 14px !important;
+    margin-bottom: 15px;
+  }
+  #digitalMarketingPopupForm input {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+  #digitalMarketingPopupForm textarea {
+    height: 100px;
   }
 }
 
