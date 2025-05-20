@@ -18,12 +18,10 @@ body {
 
   font-family: "Poppins", Sans-serif;
 
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: visible;
 }
 
-[data-scroll-container] {
-  overflow: visible; /* very important! */
-}
 
 :root {
   --white: #fff;
